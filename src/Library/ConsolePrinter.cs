@@ -15,7 +15,7 @@ namespace Full_GRASP_And_SOLID.Library
                 Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
-            Console.WriteLine($"El costo total de la receta es {recipe.GetProductionCost}");
+            Console.WriteLine($"El costo total de la receta es {recipe.GetProductionCost()}");
         }
     }
 }

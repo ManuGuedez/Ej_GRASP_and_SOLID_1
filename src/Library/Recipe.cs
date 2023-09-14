@@ -30,8 +30,9 @@ namespace Full_GRASP_And_SOLID.Library
 
         // La responsabilidad de obtener el costo total del producto final es de la receta ya que es quien conoce la infomrmación necesaria 
         // para poder calcular el total.
-        public double GetProductionCost(ArrayList steps)
+        public double GetProductionCost()
         {
+            ArrayList steps = this.steps;
             double totalCost = 0;
             foreach (Step step in steps)
             {
